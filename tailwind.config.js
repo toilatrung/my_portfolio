@@ -33,6 +33,7 @@ export default {
       },
       boxShadow: ({ theme }) => ({
         cyanShadow: `0 0 10px 0 ${theme('colors.lightCyan/10')}, 0 0 5px 0 ${theme('colors.lightCyan/6')}`,
+        pixel: `4px 4px 0px ${theme('colors.black')}`,
       }),
     },
   },

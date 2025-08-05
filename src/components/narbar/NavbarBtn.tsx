@@ -1,12 +1,22 @@
-import { GoChevronRight } from "react-icons/go";
+import { RiCursorFill } from "react-icons/ri";
 
 const NavbarBtn = () => {
   return (
-    <button className='px-4 py-2 rounded-full text-xl font-jersey15 text-while border-cyan border flex items-center gap-1 bg-gradient-to-r from-cyan to-orange hover:border-orange hover:scale-110 transition-all duration-500 hover:shadow-cyanShadow'>
+    <button
+      className='
+      flex items-center gap-2
+      px-4 py-2
+      text-xl font-jersey15 text-white
+      bg-cyan border-4 border-black
+      shadow-[4px_4px_0px_#1e1917,inset_0_0_0_2px_#f1e1d9]
+      hover:bg-lightCyan
+      active:bg-darkCyan active:translate-x-1 active:translate-y-1 active:shadow-none
+      transition-colors duration-150'
+    >
+      <RiCursorFill />
       Hire Me
-      <GoChevronRight />
     </button>
   );
-}
+};
 
-export default NavbarBtn
+export default NavbarBtn;
