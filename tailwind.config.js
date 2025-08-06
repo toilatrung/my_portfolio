@@ -24,7 +24,10 @@ export default {
         darkOrange: "#d28422",
         grey: "#626965",
         lightGrey: "#978580",
-        darkGrey: "#3f4441",           // màu đen hiện đại
+        darkGrey: "#3f4441",
+        yellow: "#f2d600",
+        lightYellow: "#f9f0a8",
+        darkYellow: "#c9b800",
       },
       fontFamily: {
         montserrat: ['"Montserrat"', 'sans-serif'],
