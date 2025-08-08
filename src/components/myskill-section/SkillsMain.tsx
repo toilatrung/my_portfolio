@@ -1,4 +1,3 @@
-import React from 'react'
 import AllSkills from './AllSkills'
 import SkillsText from './SkillsText'
 

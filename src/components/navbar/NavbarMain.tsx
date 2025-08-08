@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { FaArrowDown, FaTimes } from "react-icons/fa";
 import NavbarBtn from './NavbarBtn';
 import NavbarLink from './NavbarLink';
