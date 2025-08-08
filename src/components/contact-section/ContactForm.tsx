@@ -1,26 +1,31 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (form.current) {
+    if (form.current && !isSubmitting) {
+      setIsSubmitting(true);
       try {
         const result: EmailJSResponseStatus = await emailjs.sendForm(
-          'service_lgzm96p',
-          'template_lgzm96p',
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
           form.current,
-          'QJ2L2dR5NHMu17PcB'
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         );
         console.log(result.text);
         alert('Message sent!');
+        form.current.reset();
       } catch (error: unknown) {
         if (error instanceof Error) {
           console.error(error.message);
         }
         alert('Failed to send message.');
+      } finally {
+        setIsSubmitting(false);
       }
     }
   };
@@ -51,9 +56,10 @@ const ContactForm: React.FC = () => {
         ></textarea>
         <button
           type="submit"
-          className="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+          disabled={isSubmitting}
+          className="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed"
         >
-          Send
+          {isSubmitting ? 'Sending...' : 'Send'}
         </button>
       </form>
     </div>
