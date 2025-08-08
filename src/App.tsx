@@ -33,6 +33,9 @@ function App() {
           <ContactMeMain />
         </section>
       </div>
+      <footer className="text-center py-6">
+        <p className="text-sm">© 2025 toilatrung. All rights reserved.</p>
+      </footer>
     </main>
   );
 }
