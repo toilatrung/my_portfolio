@@ -4,10 +4,10 @@ const ContactMeLeft = () => {
   return (
     <div>
         <div>
-            <h2 className="font-montserrat text-3xl mb-4">
+            <h2 className="font-jersey text-3xl mb-4">
                 Get in Touch
             </h2>
-            <p className="font-montserrat">
+            <p className="font-jersey">
                 If you have any questions or inquiries, feel free to reach out!
             </p>
         </div>
