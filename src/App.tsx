@@ -10,24 +10,25 @@ import BlogPage from './components/blog-section/BlogPage';
 function App() {
   return (
     <main className='font-jersey15'>
-      <NavbarMain/>
+      <NavbarMain />
       <HeroMain />
-      <div className="flex flex-col items-center gap-20">
-        <div id="about">
+      <div className="flex flex-col items-center gap-20 py-10 md:py-20">
+        <section id="about">
           <AboutMeMain />
-        </div>
-        <SkillsMain />
-        <div className='gap-5 flex flex-col items-center'>
+        </section>
+        <section id="skills">
+          <SkillsMain />
+        </section>
+        <section id="projects" className="flex flex-col items-center gap-5">
           <ProjectMain />
           <div id="resume">
             <ResumeBtn />
           </div>
-        </div>
-        <div id="blog">
+        </section>
+        <section id="blog">
           <BlogPage />
-        </div>
+        </section>
       </div>
-      <div id='xóa' className='m-[1000px]'></div>
     </main>
   );
 }

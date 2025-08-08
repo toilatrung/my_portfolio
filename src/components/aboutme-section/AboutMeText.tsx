@@ -1,11 +1,9 @@
-import React from 'react'
-
 const AboutMeText = () => {
   return (
     <div className='flex flex-col md:items-start sm:items-center md:text-left sm:text-center'>
-        <h2 className='text-6xl text-yellow mb-5'>About Me</h2>
-        <p className='text-while font-montserrat mb-5'>
-            I specialize in backend development with Python/Django and have experience with TypeScript, ReactJS, NextJS, as well as C++, Java, and tools like Docker, Git, MySQL, and MongoDB. I founded and currently lead several student-driven initiatives at Troy HUST, including Troy Research and Learning Club (academic community), Troy Course Lab (learning resource platform), and Troy Tracker (course and GPA management tool). I’m also building Gia sư AI – Bright Future, an AI-powered web platform that helps students review lessons and homework through document-based interaction.
+        <h2 className='text-6xl text-yellow mb-5 font-jersey15'>About Me</h2>
+        <p className='text-white font-montserrat mb-5'>
+            I am Trinh Quang Trung, a third-year Computer Science student in the Troy University joint program at Hanoi University of Science and Technology. I am the founder and leader of several academic and technical initiatives, including Troy Research and Learning Club (a student-led academic community), Troy Course Lab (a curated resource platform), and Troy Tracker (a course and GPA management tool). Currently, I’m developing Gia sư AI – Bright Future, an AI-powered web platform that helps students review lessons and complete homework through intelligent, document-based interaction. I am passionate about building impactful educational tools and scalable systems that solve real-world problems.
         </p>
         <button className='
       flex items-center gap-2

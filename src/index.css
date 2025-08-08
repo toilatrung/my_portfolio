@@ -8,6 +8,11 @@
 @tailwind utilities;
 /* stylelint-enable @tailwind */
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 body {
     background-color: #76A4F1;
 }
