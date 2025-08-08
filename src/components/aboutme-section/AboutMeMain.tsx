@@ -9,7 +9,7 @@ const AboutMeMain = () => {
       <div className="md:w-3/5">
         <AboutMeText />
       </div>
-      <div className="md:w-2/5">
+      <div className="md:w-2/3">
         <AboutMeImage />
       </div>
     </div>
