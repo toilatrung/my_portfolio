@@ -6,6 +6,7 @@ import SkillsMain from './components/myskill-section/SkillsMain';
 import ProjectMain from './components/project-section/ProjectMain';
 import ResumeBtn from './components/resume-section/ResumeBtn';
 import BlogPage from './components/blog-section/BlogPage';
+import ContactMeMain from './components/contact-section/ContactMeMain';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </section>
         <section id="blog">
           <BlogPage />
+        </section>
+        <section>
+          <ContactMeMain />
         </section>
       </div>
     </main>
